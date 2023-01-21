@@ -3,7 +3,8 @@
 version: 2.1
 
 commands:
-   # Exercise - Rollback
+   docker:
+        - image: amazon/aws-cli
    destroy_environment:
      steps:
        - run:
