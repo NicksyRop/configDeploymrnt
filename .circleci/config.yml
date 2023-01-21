@@ -3,8 +3,7 @@
 version: 2.1
 
 commands:
-   docker:
-        - image: amazon/aws-cli
+   # Exercise - Rollback
    destroy_environment:
      steps:
        - run:
@@ -44,6 +43,7 @@ jobs:
     smoke_test:
       docker:
         - image: alpine:latest
+        - image: amazon/aws-cli
       steps:
         - run: apk add --update curl
         - run:
