@@ -59,7 +59,7 @@ jobs:
                 return 0
               fi     
         - destroy_environment
-          when: on-on_fail           
+          when: on_fail           
 workflows:
   say-hello-workflow:
     jobs:
